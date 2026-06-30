@@ -1,0 +1,1 @@
+console.log("Fuzail's Study Started");
