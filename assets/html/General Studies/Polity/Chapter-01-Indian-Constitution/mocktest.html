@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mock Tests</title>
+<title>Mock Tests | Indian Constitution</title>
 
 <style>
 *{
@@ -17,47 +17,78 @@ body{
 background:#eef4ff;
 }
 
-header{
-background:#1565c0;
-color:white;
-padding:25px;
+.header{
+background:linear-gradient(135deg,#1565c0,#0d47a1);
+color:#fff;
+padding:35px 20px;
 text-align:center;
-border-radius:0 0 25px 25px;
+border-radius:0 0 30px 30px;
+box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+.header h1{
+font-size:32px;
+margin-bottom:8px;
+}
+
+.header p{
+font-size:18px;
+opacity:.9;
 }
 
 .container{
+max-width:900px;
+margin:30px auto;
 padding:20px;
 }
 
 .card{
-background:white;
-padding:20px;
-margin-bottom:20px;
+background:#fff;
 border-radius:18px;
-box-shadow:0 5px 15px rgba(0,0,0,.15);
+padding:22px;
+margin-bottom:25px;
+box-shadow:0 8px 20px rgba(0,0,0,.12);
+transition:.3s;
+border-left:8px solid #1565c0;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 30px rgba(0,0,0,.18);
 }
 
 .card h2{
 color:#1565c0;
-margin-bottom:10px;
+margin-bottom:12px;
 }
 
-.card p{
-color:#555;
-margin-bottom:15px;
+.info{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+margin-bottom:18px;
+}
+
+.badge{
+background:#e3f2fd;
+color:#1565c0;
+padding:8px 14px;
+border-radius:20px;
+font-weight:bold;
+font-size:14px;
 }
 
 .btn{
 display:block;
-width:100%;
-text-align:center;
 text-decoration:none;
-background:#1565c0;
-color:white;
+text-align:center;
 padding:15px;
-border-radius:10px;
+background:#1565c0;
+color:#fff;
 font-size:18px;
 font-weight:bold;
+border-radius:12px;
+transition:.3s;
 }
 
 .btn:hover{
@@ -66,44 +97,95 @@ background:#0d47a1;
 
 .back{
 display:block;
-margin-top:20px;
 text-align:center;
+margin-top:30px;
 text-decoration:none;
-color:#1565c0;
+font-size:18px;
 font-weight:bold;
+color:#1565c0;
+}
+
+.footer{
+text-align:center;
+padding:25px;
+color:#777;
+font-size:15px;
+}
+
+@media(max-width:600px){
+.header h1{
+font-size:26px;
+}
+.info{
+flex-direction:column;
+}
 }
 </style>
 
 </head>
+
 <body>
 
-<header>
-<h1>📝 Mock Tests</h1>
-<p>Indian Constitution - Chapter 1</p>
-</header>
+<div class="header">
+<h1>📝 Mock Test Series</h1>
+<p>Indian Constitution • Chapter 1</p>
+</div>
 
 <div class="container">
 
 <div class="card">
 <h2>📘 Mock Test 1</h2>
-<p>40 SSC Pattern MCQs</p>
-<a class="btn" href="Mocktest1.html">Start Test</a>
+
+<div class="info">
+<div class="badge">📝 40 Questions</div>
+<div class="badge">⏱ 30 Minutes</div>
+<div class="badge">⭐ Easy</div>
+</div>
+
+<a href="Mocktest1.html" class="btn">
+🚀 Start Mock Test
+</a>
+
 </div>
 
 <div class="card">
-<h2>📘 Mock Test 2</h2>
-<p>40 SSC Pattern MCQs</p>
-<a class="btn" href="Mocktest2.html">Start Test</a>
+<h2>📗 Mock Test 2</h2>
+
+<div class="info">
+<div class="badge">📝 40 Questions</div>
+<div class="badge">⏱ 30 Minutes</div>
+<div class="badge">⭐⭐ Medium</div>
+</div>
+
+<a href="Mocktest2.html" class="btn">
+🚀 Start Mock Test
+</a>
+
 </div>
 
 <div class="card">
-<h2>📘 Mock Test 3</h2>
-<p>40 SSC Pattern MCQs</p>
-<a class="btn" href="Mocktest3.html">Start Test</a>
+<h2>📕 Mock Test 3</h2>
+
+<div class="info">
+<div class="badge">📝 40 Questions</div>
+<div class="badge">⏱ 30 Minutes</div>
+<div class="badge">⭐⭐⭐ Hard</div>
 </div>
 
-<a class="back" href="index.html">⬅ Back to Chapter</a>
+<a href="Mocktest3.html" class="btn">
+🚀 Start Mock Test
+</a>
 
+</div>
+
+<a href="index.html" class="back">
+⬅ Back to Chapter
+</a>
+
+</div>
+
+<div class="footer">
+Made with ❤️ by Fuzail
 </div>
 
 </body>
